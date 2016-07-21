@@ -1,0 +1,53 @@
+ext {
+
+    android = [compileSdkVersion: 23,
+               buildToolsVersion: "23.0.3",
+               applicationId    : "com.pro.foru.foru",
+               minSdkVersion    : 15,
+               targetSdkVersion : 23,
+               versionCode      : 1,
+               versionName      : "1.0"]
+
+    dependencies = [
+            "appcompat-v7"          : 'com.android.support:appcompat-v7:23.+',
+            /**
+             * rxlifecycle
+             * */
+            "rxlifecycle-components": 'com.trello:rxlifecycle-components:0.6.1',
+            "rxlifecycle"           : 'com.trello:rxlifecycle:0.6.1',
+            /**
+             * butterknife
+             * */
+            "butterknife"           : 'com.jakewharton:butterknife:8.0.1',
+            "butterknife-compiler"  : 'com.jakewharton:butterknife-compiler:8.0.1',
+            /**
+             * RxJava
+             * RxAndroid
+             * */
+            "rxandroid"             : 'io.reactivex:rxandroid:1.2.0',
+            "rxjava"                : 'io.reactivex:rxjava:1.1.5',
+
+            /**
+             *
+             * retrofit
+             *
+             * */
+            "retrofit"              : 'com.squareup.retrofit:retrofit:2.0.0-beta2',
+            "converter-gson"        : 'com.squareup.retrofit:converter-gson:2.0.0-beta2',
+            "adapter-rxjava"         : 'com.squareup.retrofit:adapter-rxjava:2.0.0-beta2',
+            "fastjson"              : 'com.alibaba:fastjson:1.1.34.android',
+            "converter-fastjson"    : 'org.ligboy.retrofit2:converter-fastjson-android:2.1.0',
+            /**
+             *
+             * glide
+             * */
+            "glide"                 : 'com.github.bumptech.glide:glide:3.7.0',
+            /**
+             *nineoldandroids
+             * */
+            "nineoldandroids": 'com.nineoldandroids:library:2.4.0',
+
+
+            "circleindicator"        : 'me.relex:circleindicator:1.2.1@aar'
+    ]
+}

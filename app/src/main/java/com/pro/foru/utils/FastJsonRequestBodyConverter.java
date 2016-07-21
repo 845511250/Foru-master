@@ -1,0 +1,32 @@
+package com.pro.foru.utils;
+
+/**
+ * Created by zuoyun on 2016/7/21.
+ */
+import com.alibaba.fastjson.JSON;
+import com.squareup.okhttp.MediaType;
+import com.squareup.okhttp.RequestBody;
+
+import java.io.IOException;
+
+import retrofit.Converter;
+
+
+/**
+ * <b>类名称：</b> FastJsonRequestBodyConverter <br/>
+ * <b>类描述：</b> RequestBody转换器<br/>
+ * <b>创建人：</b> Lincoln <br/>
+ * <b>修改人：</b> Lincoln <br/>
+ * <b>修改时间：</b> 2016年03月08日 下午5:02<br/>
+ * <b>修改备注：</b> <br/>
+ *
+ * @version 1.0.0 <br/>
+ */
+public class FastJsonRequestBodyConverter<T> implements Converter<T, RequestBody> {
+    private static final MediaType MEDIA_TYPE = MediaType.parse("application/json; charset=UTF-8");
+
+    @Override
+    public RequestBody convert(T value) throws IOException {
+        return RequestBody.create(MEDIA_TYPE, JSON.toJSONBytes(value));
+    }
+}
