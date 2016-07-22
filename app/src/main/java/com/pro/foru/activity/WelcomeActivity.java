@@ -41,7 +41,7 @@ public class WelcomeActivity extends Activity {
            initview();
         }
         else {
-            startActivity(new Intent(this, StartActivity.class));
+            startActivity(new Intent(this, MainActivity.class));
             finish();
         }
 
