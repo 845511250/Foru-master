@@ -17,4 +17,6 @@
     <color name="mygreen">#34a350</color>
     <color name="myyellow">#f7d23e</color>
     <color name="myblue">#375bf1</color>
+    <color name="mgray">#777</color>
+    <color name="mblack">#000</color>
 </resources>

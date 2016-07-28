@@ -1,5 +1,9 @@
 package com.pro.foru.activity;
 
+
+/*
+启动引导页
+ */
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -105,7 +109,7 @@ public class WelcomeActivity extends Activity {
 
         @Override
         public boolean isViewFromObject(View arg0, Object arg1) {
-            return arg0==arg1;//官方提示这样写
+            return arg0==arg1;
         }
     }
 
