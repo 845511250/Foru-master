@@ -31,14 +31,14 @@ public class NetMethod {
             netMethod = new NetMethod();
         return netMethod;
     }
-    public void login(Subscriber subscriber,String email,String password,String key){
-        retrofitService.login(email,password,key)
+    public void login(Subscriber subscriber,String email,String password){
+        retrofitService.login(email,password, Constants.ForU_key)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(subscriber);
     }
-    public void register(Subscriber subscriber,String email,String password,String key){
-        retrofitService.register(email,password,key)
+    public void register(Subscriber subscriber,String email,String password){
+        retrofitService.register(email,password, Constants.ForU_key)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(subscriber);

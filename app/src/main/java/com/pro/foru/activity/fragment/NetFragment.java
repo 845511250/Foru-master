@@ -74,7 +74,7 @@ public class NetFragment extends RxFragment {
                 F.e("finish in "+(new Date().getTime()-starttime)+" ms");
             }
         };
-        NetMethod.getInstance().login(subscriber,"abc@qq.com","123456","IkD4M40BxKbnVheA2Lq3Em87OOqKEH1o");
+        NetMethod.getInstance().login(subscriber,"abc@qq.com","123456");
     }
 
     @OnClick(R.id.btn_get)

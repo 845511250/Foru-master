@@ -91,7 +91,7 @@ public class LoginActivity extends Activity {
                 F.e("finish in "+(new Date().getTime()-starttime)+" ms");
             }
         };
-        NetMethod.getInstance().login(subscriber,email,password, Constants.ForU_key);
+        NetMethod.getInstance().login(subscriber,email,password);
     }
 
 }

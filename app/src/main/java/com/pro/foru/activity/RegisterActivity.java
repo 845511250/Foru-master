@@ -92,7 +92,7 @@ public class RegisterActivity extends Activity {
                 }
             }
         };
-        NetMethod.getInstance().register(subscriber,email,password, Constants.ForU_key);
+        NetMethod.getInstance().register(subscriber,email,password);
     }
 
 }
